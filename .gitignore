@@ -1,0 +1,16 @@
+# Axure原型临时文件
+*.rp
+*.rpprj
+.DS_Store
+Thumbs.db
+
+# 编辑器临时文件
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# 系统文件
+*.tmp
+*.log
