@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M 0 0  L 128 0  L 128 128  L 0 128  Z " fill-rule="evenodd" fill="black" id="path175" />
+    <clipPath id="clip176">
+      <use xlink:href="#path175" />
+    </clipPath>
+    <filter x="-50.00%" y="-50.00%" width="200.00%" height="200.00%" filterUnits="objectBoundingBox" id="filter177">
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0  " in="SourceGraphic" />
+    </filter>
+  </defs>
+  <g transform="matrix(1 0 0 1 -615 -21 )">
+    <g transform="matrix(0.15625 0 0 0.15625 615 21 )" clip-path="url(#clip176)" filter="url(#filter177)">
+      <g>
+        <circle cx="16" cy="64" r="16" fill="#ffffff" />
+        <circle cx="16" cy="64" r="14.344" fill="#ffffff" transform="rotate(45 64 64)" />
+        <circle cx="16" cy="64" r="12.531" fill="#ffffff" transform="rotate(90 64 64)" />
+        <circle cx="16" cy="64" r="10.75" fill="#ffffff" transform="rotate(135 64 64)" />
+        <circle cx="16" cy="64" r="10.063" fill="#ffffff" transform="rotate(180 64 64)" />
+        <circle cx="16" cy="64" r="8.063" fill="#ffffff" transform="rotate(225 64 64)" />
+        <circle cx="16" cy="64" r="6.438" fill="#ffffff" transform="rotate(270 64 64)" />
+        <circle cx="16" cy="64" r="5.375" fill="#ffffff" transform="rotate(315 64 64)" />
+        <animateTransform attributeName="transform" type="rotate" values="45 64 64;90 64 64;135 64 64;180 64 64;225 64 64;270 64 64;315 64 64;0 64 64" calcMode="discrete" dur="720ms" repeatCount="indefinite"></animateTransform>
+      </g>
+    </g>
+  </g>
+</svg>
