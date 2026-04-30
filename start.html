@@ -33,6 +33,14 @@
             font-size: 28px;
             text-align: center;
         }
+        .note {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 25px;
+            color: #856404;
+        }
         .page-list {
             display: grid;
             gap: 15px;
@@ -44,7 +52,7 @@
             transition: all 0.3s ease;
             border: 2px solid transparent;
         }
-        .page-item:hover {
+        .page-item:hover:not(.disabled) {
             background: #e9ecef;
             border-color: #667eea;
             transform: translateY(-2px);
@@ -63,19 +71,43 @@
             font-size: 14px;
             margin-top: 5px;
         }
+        .page-item.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background: #f0f0f0;
+        }
+        .page-item.disabled a {
+            color: #999;
+            pointer-events: none;
+        }
+        .badge {
+            display: inline-block;
+            background: #dc3545;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>📱 西顿BD原型 - 页面导航</h1>
+        
+        <div class="note">
+            <strong>⚠️ 注意：</strong>部分大文件超过 Cloudflare Pages 大小限制，已暂时禁用。完整项目请查看 GitHub 仓库。
+        </div>
+        
         <div class="page-list">
             <div class="page-item">
                 <a href="1_首页.html">🏠 首页</a>
                 <span>应用主页面，包含主要功能入口</span>
             </div>
-            <div class="page-item">
-                <a href="2_促单.html">📝 促单</a>
-                <span>订单促进功能页面</span>
+            <div class="page-item disabled">
+                <a href="2_促单.html">📝 促单 <span class="badge">文件过大</span></a>
+                <span>订单促进功能页面 - 文件过大已禁用</span>
             </div>
             <div class="page-item">
                 <a href="3_订单列表.html">📋 订单列表</a>
@@ -85,9 +117,9 @@
                 <a href="4_服务网点.html">📍 服务网点</a>
                 <span>查看服务网点信息</span>
             </div>
-            <div class="page-item">
-                <a href="5_我的.html">👤 我的</a>
-                <span>个人中心</span>
+            <div class="page-item disabled">
+                <a href="5_我的.html">👤 我的 <span class="badge">文件过大</span></a>
+                <span>个人中心 - 文件过大已禁用</span>
             </div>
             <div class="page-item">
                 <a href="0_首次登录页.html">🎯 首次登录页</a>

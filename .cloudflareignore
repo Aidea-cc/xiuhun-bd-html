@@ -1,0 +1,17 @@
+# Cloudflare Pages 忽略文件
+# 忽略超过 25MB 的文件
+2_促单.html
+5_我的.html
+
+# 忽略压缩文件
+xihun_bd_ipad20260430.zip
+*.zip
+
+# 忽略 git 相关
+.git
+.gitignore
+
+# 忽略临时文件
+*.log
+.DS_Store
+Thumbs.db
